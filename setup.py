@@ -123,7 +123,8 @@ setup(
     author="Yang Xing Rui",
     description="python bindings for pydbow3",
     long_description="",
-    ext_modules=[CMakeExtension("pydbow3")],
+    ext_modules=[CMakeExtension("pydbow3"),],
+    include_dirs=[numpy.get_include()],
     cmdclass={"build_ext": CMakeBuild},
     zip_safe=False
 )
