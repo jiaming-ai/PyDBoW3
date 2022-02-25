@@ -3,6 +3,7 @@ import os
 import re
 import subprocess
 import sys
+import numpy
 
 from setuptools import setup, Extension
 from setuptools.command.build_ext import build_ext
