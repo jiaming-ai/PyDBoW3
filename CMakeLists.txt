@@ -9,6 +9,7 @@ add_subdirectory(modules/pybind11)
 
 find_package(OpenCV REQUIRED)
 find_package(DBoW3 REQUIRED)
+find_package(Python3 COMPONENTS Interpreter NumPy REQUIRED)
 
 pybind11_add_module(pydbow3 
     src/py_dbow3.cpp
@@ -19,6 +20,7 @@ target_link_libraries(pydbow3
 PRIVATE
     ${OpenCV_LIBS}
     ${DBoW3_LIBS}
+    ${PYTHON_LIBRARIES} Python3::NumPy
 )
 
 target_compile_definitions(pydbow3 
