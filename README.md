@@ -1,7 +1,7 @@
 PyDBoW3
 ==============
+This is a fork from https://github.com/xingruiy/PyDBoW3 - it runs with OpenCV 4.
 
-This repo functions mostly the same with [this](https://github.com/foxis/pyDBoW3), but is less heavy. It does not rely on `Boost`, I have re-written most of the code to utilise the power of `pybind11`.
 
 ## Get started
 
@@ -35,6 +35,6 @@ results = db.query(features_list[feature_to_query])
 + currently only `*nix` is supported
 
 ## Acknowledgement
-
+Fork from https://github.com/xingruiy/PyDBoW3
 This work is based on https://github.com/foxis/pyDBoW3
 and https://github.com/edmBernard/ybind11_opencv_numpy.git
